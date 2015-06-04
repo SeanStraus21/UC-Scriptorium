@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>The Scriptorium</title>
+		<meta charset="utf-8"/>
+		<link rel="icon" href="content/images/favicon.ico" type="image/x-icon">
+		<link rel="stylesheet" href="styles/uberkultur.css" type="text/css" media="all"/>
+	</head>
+	
+	<body>
+		<div id="header"></div>
+		<script src="scripts/IncludeHeader.js"></script>
+		<h1>The Scriptorium</h1>
+		<div id="main">
+			<div id=onlycolumn>
+				<p>
+				use the text input to look up books. press buttons to do things
+				</p>
+				<br>
+				<div style="overflow:hidden">
+					<div style="float:left; width:30%; margin-left:3%;">
+						<br>
+						<b>Search by title</b><br>
+						<input id="searchBox" type="text" value="" placeholder="title">
+						<button onclick="searchTitle();">Search</button>
+					</div>
+					<div style="float:left; width:30%; margin:3%">
+						<b>Search by author</b><br>
+						<input id="translateBox" type="text" value="" placeholder="author">
+						<button onclick="searchAuthor();">Searchit!</button>
+						
+					</div>
+				</div>
+				<div id="output"></div>
+			</div>
+		</div>
+		<div id="footer"></div>
+		<script src="scripts/IncludeFooter.js"></script>
+		<script src="scripts/ScriptoriumModel.js"></script>
+		<script src="scripts/ScriptoriumController.js"></script>
+	</body>
+</html>
