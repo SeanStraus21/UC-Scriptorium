@@ -1,0 +1,24 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>The Scriptorium</title>
+		<meta charset="utf-8"/>
+		<link rel="icon" href="content/images/favicon.ico" type="image/x-icon">
+		<link rel="stylesheet" href="styles/uberkultur.css" type="text/css" media="all">
+		<!-- Link AngularJS Components -->
+		<script src="scripts/lib/angular.min.js"></script>
+		<script src="scripts/lib/angular-route.min.js"></script>
+		<script src="scripts/lib/angular-resource.min.js"></script>
+		<!-- <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.7/angular.js"></script> -->
+		<!-- <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.7/angular-route.js"></script> -->
+		<!-- <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.7/angular-resource.js"></script> -->
+		<script src="scripts/app.js"></script>
+	</head>
+	<body ng-app="scriptoriumApp">
+		<div ng-include="header">
+		<ng-view></ng-view>
+		<div ng-include="body">
+		<!-- Include Javascript Components -->
+		<script src="scripts/controllers/scriptoriumController.js"></script>
+	</body>
+</html>
